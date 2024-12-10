@@ -67,4 +67,4 @@ namespace VinylRecordsApplication.Pages.State
         }
     }
 }
-}
+
