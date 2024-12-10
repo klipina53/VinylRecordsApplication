@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VinylRecordsApplication"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+              Title="Учёт поставок виниловых пластинок" Height="450" Width="800" MinHeight="450" MinWidth="800">
     <Grid>
-        
+        <Menu Height="25" VerticalAlignment="Top">
+            <MenuItem Header="Пластинки" Height="25">
+                <MenuItem Header="Список" Click="OpenRecordList"/>
+                <MenuItem Header="Добавить" Click="OpenRecordAdd"/>
+                <MenuItem Header="Экспортировать" Click="ExportRecord"/>
+            </MenuItem>
+            <MenuItem Header="Поставщики" Height="25">
+                <MenuItem Header="Список" Click="OpenManufacrurersList"/>
+                <MenuItem Header="Добавить" Click="OpenManufacrurersAdd"/>
+            </MenuItem>
+            <MenuItem Header="Поставки" Height="25">
+                <MenuItem Header="Список" Click="OpenSupplyList"/>
+                <MenuItem Header="Добавить" Click="OpenSupplyAdd"/>
+            </MenuItem>
+            <MenuItem Header="Состояния" Height="25">
+                <MenuItem Header="Список" Click="OpenStateList"/>
+                <MenuItem Header="Добавить" Click="OpenStateAdd"/>
+            </MenuItem>
+        </Menu>
+        <Frame x:Name="frame" NavigationUIVisibility="Hidden" Margin="0,25,0,0"/>
     </Grid>
 </Window>
