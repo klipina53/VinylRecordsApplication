@@ -143,6 +143,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\Supple\Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\Supple\Elements\Supply.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -180,6 +184,9 @@
     <Compile Include="Pages\State\Main.xaml.cs">
       <DependentUpon>Main.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Supple\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Supple\Elements\Supply.xaml.cs">
       <DependentUpon>Supply.xaml</DependentUpon>
     </Compile>
@@ -212,8 +219,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Image\" />
+    <Resource Include="Image\ic_Manufacture.png" />
+    <Resource Include="Image\ic_State.png" />
+    <Resource Include="Image\ic_supply.png" />
+    <Resource Include="Image\ic_VinilRecord.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
